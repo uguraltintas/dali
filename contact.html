@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html dir="auto" lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Contact Us - Dali: AI Art Generator</title>
+
+    <meta name="description" content="Contact Dali: AI Art Generator App" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="assets/favicon.png" />
+
+    <link rel="stylesheet" href="assets/style.css" />
+    <style>
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        .submit-button {
+            background-color: #0066cc;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .submit-button:hover {
+            background-color: #0052a3;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header class="app__header container">
+            <div class="app__logo-wrapper">
+                <a href="index.html">
+                    <img class="app__logo" src="content/image/icon.png" alt="Dali: AI Art Generator">
+                </a>
+            </div>
+        </header>
+
+        <section class="app__section container">
+            <h1 class="app__section-title">Contact Us</h1>
+            
+            <form class="contact-form" action="https://formsubmit.co/uguraltintas17@gmail.com" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <!-- Redirect after submission -->
+                <input type="hidden" name="_next" value="https://uguraltintas.github.io/dali/thank-you.html">
+                
+                <!-- Prevent spam -->
+                <input type="hidden" name="_captcha" value="true">
+                
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <p class="footer__love">
+                    <script>document.write('&copy;' + (new Date()).getFullYear());</script><noscript>&copy;</noscript>
+                    <a>Ugur Altintas</a>
+                </p>
+                <ul class="footer__links">
+                    <li class="footer__link">
+                        <a href="terms.html">Terms of Use</a>
+                    </li>
+                    <li class="footer__link">
+                        <a href="privacy.html">Privacy</a>
+                    </li>
+                    <li class="footer__link">
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
